@@ -21,11 +21,6 @@
   @include media-query($on-palm) {
     padding-right: 45px;
   }
-
-  &,
-  &:visited {
-    color: $grey-color-dark;
-  }
 }
 
 .site-nav {
@@ -245,7 +240,8 @@
 .post-content {
   margin-bottom: $spacing-unit;
 
-  h2 {
+  h2, h2 > code {
+    color: tomato;
     @include relative-font-size(1.75);
 
     @media screen and (min-width: $on-large) {
@@ -253,7 +249,8 @@
     }
   }
 
-  h3 {
+  h3, h3 > code {
+    color: tomato;
     @include relative-font-size(1.375);
 
     @media screen and (min-width: $on-large) {
@@ -261,7 +258,8 @@
     }
   }
 
-  h4 {
+  h4, h4 > code {
+    color: tomato;
     @include relative-font-size(1.125);
 
     @media screen and (min-width: $on-large) {
