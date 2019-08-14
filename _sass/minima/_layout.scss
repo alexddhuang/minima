@@ -296,3 +296,19 @@
     width:         calc(50% - (#{$spacing-unit} / 2));
   }
 }
+
+.categories-list {
+  margin: 0 5px;
+  
+  summary {
+    @include relative-font-size(1.125);
+
+    @media screen and (min-width: $on-large) {
+      @include relative-font-size(1.25);
+    }
+  }
+  
+  li {
+    list-style: none;
+  }
+}
