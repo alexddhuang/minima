@@ -12,7 +12,12 @@ layout: default
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author | escape }}</span></span>
-      {%- endif -%}</p>
+      {%- endif -%}
+      {%- if page.tags -%}
+        {% assign tags = page.tags | sort %}
+        | <span>{% for tag in tags %}<a class="tag" href="/tag/{{ tag | slugify }}.html">{{ tag }}</a>{% endfor %}</span>
+      {%- endif -%}
+    </p>
   </header>
 
   {% if page.toc %}
@@ -32,3 +37,7 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+<script>
+  SetTagColorByClassName("tag");
+</script>

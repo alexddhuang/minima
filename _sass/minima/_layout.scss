@@ -312,3 +312,11 @@
     list-style: none;
   }
 }
+
+a.tag {
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
+  margin-right: 3px;
+  padding: 0px 2px 2px 4px;
+  text-decoration: none;
+}

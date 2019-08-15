@@ -43,6 +43,7 @@ minima:
 #header_pages:
 # - about.md
 # - categories.md
+# - tags.md
 
 # Build settings
 theme: minima

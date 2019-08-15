@@ -1,0 +1,20 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{% assign tags = site.tags | sort %}
+
+{% for tag in tags %}
+  {% assign tag_name = tag[0] %}
+  {% assign posts = tag[1] %}
+  {% assign posts_size = posts | size %}
+  <a class="tag" href="/tag/{{ tag_name | slugify }}.html" style="font-size: {{ posts_size  |  times: 4 | plus: 80  }}%">
+    {{ tag_name }}
+  </a>
+{% endfor %}
+
+<script>
+  SetTagColorByClassName("tag");
+</script>
