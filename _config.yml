@@ -51,6 +51,10 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-paginate
+
+paginate: 3 # <number-of-posts-per-page>
+paginate_path: "/page/:num.html" # "/path/to/pagination/page:num/"
 
 copyright: >    
   © <!--copyyears--> <!--author-->; All rights reserved.
