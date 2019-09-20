@@ -10,14 +10,36 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       white !default;
-$background-color: #17202a !default;
-$brand-color:      #47a0eb !default;
+$ios13-dark-mode-blue:   rgb(10, 132, 255);
+$ios13-dark-mode-green:  rgb(48, 209, 88);
+$ios13-dark-mode-indigo: rgb(94, 92, 230);
+$ios13-dark-mode-orange: rgb(255, 159, 10);
+$ios13-dark-mode-pink:   rgb(255, 55, 95);
+$ios13-dark-mode-purple: rgb(191, 90, 242);
+$ios13-dark-mode-red:    rgb(255, 69, 58);
+$ios13-dark-mode-teal:   rgb(100, 210, 255);
+$ios13-dark-mode-yellow: rgb(255, 214, 10);
 
-$grey-color:       #8b99a9 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
-$orange-color:     #f66a0a !default;
+$ios13-dark-mode-grey:   rgb(142, 142, 147);
+$ios13-dark-mode-grey2:  rgb(99, 99, 102);
+$ios13-dark-mode-grey3:  rgb(72, 72, 74);
+$ios13-dark-mode-grey4:  rgb(58, 58, 60);
+$ios13-dark-mode-grey5:  rgb(44, 44, 46);
+$ios13-dark-mode-grey6:  rgb(28, 28, 30);
+
+$text-color:       white !default;
+$background-color: black !default;
+$brand-color:      $ios13-dark-mode-blue !default;
+
+$grey-color:       $ios13-dark-mode-grey !default;
+$grey-color2:      $ios13-dark-mode-grey2 !default;
+$grey-color3:      $ios13-dark-mode-grey3 !default;
+$grey-color4:      $ios13-dark-mode-grey4 !default;
+$grey-color5:      $ios13-dark-mode-grey5 !default;
+$grey-color6:      $ios13-dark-mode-grey6 !default;
+
+$orange-color:     $ios13-dark-mode-orange !default;
+
 $table-text-align: left !default;
 
 // Width of the content area

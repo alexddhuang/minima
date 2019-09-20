@@ -2,8 +2,8 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  border-top: 5px solid $grey-color3;
+  border-bottom: 1px solid $grey-color;
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
 
@@ -28,7 +28,7 @@
   top: 9px;
   right: $spacing-unit / 2;
   background-color: $background-color;
-  border: 1px solid $grey-color-light;
+  border: 1px solid $grey-color;
   border-radius: 5px;
   text-align: right;
 
@@ -45,7 +45,7 @@
     text-align: center;
 
     > svg path {
-      fill: $grey-color-dark;
+      fill: $grey-color;
     }
   }
 
@@ -117,7 +117,7 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  border-top: 1px solid $grey-color;
   padding: $spacing-unit 0;
 }
 
@@ -241,7 +241,7 @@
   margin-bottom: $spacing-unit;
 
   h2, h2 > code {
-    color: tomato;
+    color: $ios13-dark-mode-teal;
     @include relative-font-size(1.75);
 
     @media screen and (min-width: $on-large) {
@@ -250,7 +250,7 @@
   }
 
   h3, h3 > code {
-    color: tomato;
+    color: $ios13-dark-mode-teal;
     @include relative-font-size(1.375);
 
     @media screen and (min-width: $on-large) {
@@ -259,7 +259,7 @@
   }
 
   h4, h4 > code {
-    color: tomato;
+    color: $ios13-dark-mode-teal;
     @include relative-font-size(1.125);
 
     @media screen and (min-width: $on-large) {
@@ -280,7 +280,7 @@
     a {
       display: block;
       padding: $spacing-unit / 4;
-      border: 1px solid $grey-color-light
+      border: 1px solid $grey-color;
     }
     &:hover .svg-icon { fill: currentColor; }
   }
@@ -314,7 +314,7 @@
 }
 
 a.tag {
-  border: 1px solid $grey-color-light;
+  border: 1px solid $grey-color;
   border-radius: 3px;
   margin-right: 3px;
   padding: 0px 2px 2px 4px;
